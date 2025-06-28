@@ -1,41 +1,98 @@
 ---
 title: "Regeneración de Plantas de Fresa (Fragaria × ananassa) Variedad San Andreas a partir de Protoplastos"
-author: " Hector Arista Fernández"
+author: "Hector Arista Fernández"
 format:
   html:
     toc: true
     toc-location: left
     embed-resources: true
     number-sections: true
-    output-file: index 
+    output-file: index
     theme: cerulean
+    css: estilo.css
 editor_options:
   chunk_output_type: console
+output:
+  html_document:
+    css: style.css  # Para personalizar el estilo, como el tamaño y la fuente
+    toc: true
+    toc-location: left
+    number_sections: true
+    theme: cerulean
+    highlight: tango
+    keep_md: true
+
+# Personalización del estilo con CSS
+style: |
+  body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    text-align: justify;
+  }
+
+  h1 {
+    font-size: 14pt;
+    font-weight: bold;
+  }
+
+  h2, h3, h4, h5, h6 {
+    font-weight: bold;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  .kable {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    border: 1px solid #000;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .kable thead th {
+    font-weight: bold;
+    font-size: 12pt;
+  }
+
+  .kable tbody td {
+    font-size: 12pt;
+  }
 ---
 
-# INTRODUCCIÓN
+# **PROBLEMA DE INVESTIGACION**
+La fresa (*Fragaria × ananassa*) es un cultivo económicamente importante en Perú y otras regiones, sin embargo, enfrenta serios problemas fitopatológicos que afectan su producción, siendo el moho gris causado por Botrytis cinerea uno de los más graves. Este patógeno reduce la calidad y el rendimiento de los frutos, lo que obliga a los productores a recurrir al uso excesivo de fungicidas. A pesar de su importancia, la regeneración de plantas de fresa de la variedad San Andreas a partir de protoplastos sigue siendo un desafío poco explorado. ¿Cuál es la respuesta de regeneración de plantas completas de fresa (Fragaria × ananassa) en la variedad San Andreas, a partir de protoplastos?
 
-La fresa (*Fragaria × ananassa*) es una planta perenne de la familia Rosaceae, que ha ganado importancia económica y nutricional a nivel mundial. En Perú, la variedad San Andreas se destaca por su calidad superior y resistencia, siendo demandada en los mercados internacionales (Mixquititla-Casbis et al., 2020). Sin embargo, los cultivos de fresa enfrentan desafíos fitopatológicos, como el moho gris causado por *Botrytis cinerea*, que afecta la producción (Cho et al., 2014). Este patógeno provoca descomposición acelerada de los frutos, lo que reduce la calidad (Chulanov et al., 2021).
+# **OBJETIVOS**
 
-La biotecnología vegetal ha emergido como una herramienta clave para superar estos desafíos, permitiendo el mejoramiento genético rápido y eficiente de cultivos, sin la necesidad de cruzamientos convencionales (Gaston et al., 2020). Las técnicas de ingeniería genética y edición genética, como CRISPR/Cas9, se han utilizado para mejorar la resistencia de plantas a enfermedades (Koloniuk et al., 2022). Además, los métodos de regeneración de protoplastos en fresa abren nuevas posibilidades para el mejoramiento genético, facilitando la creación de cultivos más resistentes y competitivos (Vieira et al., 1990).
+# **Objetivo general**
 
-# OBJETIVOS
+Regenerar plantas de fresa (*Fragaria × ananassa*) en la variedad San Andreas a partir de protoplastos.
 
-## Objetivo general
+# **Objetivos específicos**
 
-Determinar un protocolo adecuado para la regeneración de plantas de fresa (*Fragaria × ananassa*) en la variedad San Andreas a partir de protoplastos.
+- Validar un método para la inducción de brotes a partir de pecíolos de fresa (*Fragaria × ananassa*) mediante diferentes concentraciones de reguladores de crecimiento.
 
-## Objetivos específicos
+- Optimizar el aislamiento de protoplastos a partir de hojas de fresa (*Fragaria × ananassa*) mediante diferentes concentraciones de soluciones enzimáticas.
 
-- Validar un método para la inducción de brotes a partir de pecíolos de fresa mediante diferentes concentraciones de reguladores de crecimiento.
-- Optimizar el aislamiento de protoplastos a partir de hojas de fresa mediante diferentes concentraciones de soluciones enzimáticas.
-- Regenerar plantas completas a partir de protoplastos aislados de hojas de fresa mediante diferentes concentraciones de reguladores de crecimiento.
+- Regenerar plantas completas a partir de protoplastos aislados de hojas de fresa (*Fragaria × ananassa*).
 
-# ANTECEDENTES DE LA INVESTIGACIÓN
+# **ANTECEDENTES DE LA INVESTIGACIÓN**
 
-La fresa (Fragaria × ananassa) es una planta perenne que pertenece a la familia Rosaceae y ha ganado una importancia económica y nutricional considerable a nivel global. Su capacidad de adaptarse a diversas condiciones climáticas le ha permitido ser cultivada ampliamente en diferentes regiones, destacando especialmente en las áreas andinas de Perú (Rivas et al., 2023). Dentro de las variedades más relevantes en el país se encuentra la variedad San Andreas, reconocida por su resistencia y calidad superior, lo que la convierte en una de las más demandadas en los mercados internacionales (Mixquititla-Casbis et al., 2020). A medida que la producción de fresa en el Perú ha incrementado, se ha convertido en una actividad agrícola clave para las regiones de Cañete, Barranca,  Huaral y ahora Amazonas, donde las condiciones climáticas favorecen el cultivo de esta planta (Quispe et al., 2025). Sin embargo, el crecimiento de esta industria también enfrenta varios desafíos relacionados con la aparición de enfermedades fitopatológicas que afectan la producción (Somssich, 2004).
+La fresa (*Fragaria × ananassa*) es una planta perenne perteneciente a la familia Rosaceae, reconocida por su relevancia económica y nutricional global. En Perú, la variedad San Andreas ha demostrado destacarse por su resistencia y calidad superior, lo que la ha convertido en una de las más demandadas en los mercados internacionales (Mixquititla-Casbis et al., 2020). Sin embargo, el crecimiento de esta industria enfrenta desafíos importantes, especialmente enfermedades fitopatológicas como el moho gris, causado por el hongo Botrytis cinerea (Cho et al., 2014).
 
-Uno de los principales problemas que enfrenta el cultivo de fresa es el moho gris, una enfermedad causada por el hongo Botrytis cinerea (Cho et al., 2014). Este patógeno afecta principalmente los frutos, causando una descomposición acelerada que reduce la calidad de los frutos (Chulanov et al., 2021). La rápida propagación del hongo representa un desafío significativo para los productores, quienes recurren con frecuencia al uso de fungicidas químicos para tratar de mitigar sus efectos (Dean et al., 2012). Sin embargo, el uso excesivo de estos tratamientos plantea preocupaciones tanto en términos de seguridad alimentaria como de impacto ambiental, lo que resalta la necesidad urgente de encontrar soluciones más sostenibles para el control de esta enfermedad (Fitzgerald et al, 2008).
+La biotecnología vegetal ha emergido como una herramienta clave para abordar estos desafíos. La edición genética, especialmente utilizando la tecnología CRISPR/Cas9, ha permitido avances significativos en la mejora genética de cultivos como la fresa, aumentando la resistencia a patógenos como Botrytis cinerea (James et al., 1990; Koloniuk et al., 2022). La regeneración de plantas a partir de protoplastos ha demostrado ser eficaz en la creación de variedades mejoradas sin la integración de material genético extraño, una ventaja adicional en términos de seguridad y control (Potrykus & Shillito, 1986; Roest & Gilissen, 1993).
 
 En este contexto, la biotecnología vegetal ha emergido como una herramienta fundamental para abordar los problemas fitopatológicos que afectan a los cultivos de fresa (Fusi et al., 2015). Las técnicas de ingeniería genética han ofrecido una alternativa más eficiente y rápida en comparación con los métodos tradicionales de mejoramiento genético, permitiendo la creación de variedades resistentes sin depender de cruzamientos convencionales, que suelen ser procesos largos y costosos (Gaston et al., 2020). Estas nuevas tecnologías permiten introducir cambios precisos en el ADN de las plantas, facilitando la creación de cultivos más resistentes a enfermedades como el moho gris (Ghosh et al., 2019). De hecho, la modificación genética de genes específicos relacionados con la susceptibilidad a Botrytis cinerea ha demostrado ser una estrategia efectiva para mejorar la resistencia de la fresa a este patógeno (Iqbal et al., 2021).
 
@@ -43,23 +100,19 @@ La edición genética, en particular, se ha convertido en una de las herramienta
 
 En paralelo, los métodos de regeneración in vitro de protoplastos también han mostrado ser una estrategia eficaz para el mejoramiento genético de la fresa (Vieira et al., 1990). El aislamiento y la regeneración de protoplastos son pasos clave que viabilizan la modificación de genes de interés en las plantas (Roest & Gilissen, 1993). Además, este proceso evita la integración de material genético extraño en el genoma de la planta, lo que representa una ventaja adicional en términos de seguridad y control (Potrykus & Shillito, 1986). La regeneración de protoplastos también facilita la creación de cultivos libres de patógenos, lo que es fundamental para mejorar la calidad de los frutos y garantizar una producción más saludable y competitiva (Hernández-Ruiz et al., 2025). El uso de protoplastos no solo facilita la transformación genética, sino que también ofrece un enfoque eficiente para la edición de genes en plantas no recalcitrantes, lo que abre nuevas posibilidades para el mejoramiento genético de cultivos como la fresa, mejorando la resistencia a patógenos y la adaptabilidad ambiental.
 
-Recientes investigaciones han mostrado que el uso de medios de cultivo enriquecidos con citoquininas y auxinas favorece la formación de brotes y raíces en la fresa, lo que mejora la eficiencia de la regeneración in vitro (Bertini et al., 2019). Estos avances sugieren que la fresa no solo puede ser multiplicada rápidamente mediante cultivo in vitro, sino que también se pueden insertar genes específicos para mejorar su resistencia a enfermedades (Castro et al., 2011). De esta manera, la combinación de técnicas de regeneración in vitro con la edición genética abre nuevas posibilidades para el mejoramiento de la fresa, permitiendo la creación de variedades más resistentes y adaptadas a las condiciones del entorno (Gou et al., 2020). Estos avances no solo benefician a los agricultores al ofrecerles cultivos de mayor calidad, sino que también contribuyen a la sostenibilidad de la producción de fresa a nivel global.Hipótesis
-La implementación de un protocolo adecuado para la regeneración de protoplastos de fresa (Fragaria × ananassa), en la variedad San Andreas, facilitará el desarrollo de aplicaciones biotecnológicas avanzadas en el mejoramiento genético de este cultivo.
+Recientes investigaciones han mostrado que el uso de medios de cultivo enriquecidos con citoquininas y auxinas favorece la formación de brotes y raíces en la fresa, lo que mejora la eficiencia de la regeneración in vitro (Bertini et al., 2019). Estos avances sugieren que la fresa no solo puede ser multiplicada rápidamente mediante cultivo in vitro, sino que también se pueden insertar genes específicos para mejorar su resistencia a enfermedades (Castro et al., 2011). De esta manera, la combinación de técnicas de regeneración in vitro con la edición genética abre nuevas posibilidades para el mejoramiento de la fresa, permitiendo la creación de variedades más resistentes y adaptadas a las condiciones del entorno (Gou et al., 2020). Estos avances no solo benefician a los agricultores al ofrecerles cultivos de mayor calidad, sino que también contribuyen a la sostenibilidad de la producción de fresa a nivel global.Hipótesis La implementación de un protocolo adecuado para la regeneración de protoplastos de fresa (Fragaria × ananassa), en la variedad San Andreas, facilitará el desarrollo de aplicaciones biotecnológicas avanzadas en el mejoramiento genético de este cultivo.
 
-
-# HIPÓTESIS
+# **HIPÓTESIS**
 
 La implementación de un protocolo adecuado para la regeneración de protoplastos de fresa (*Fragaria × ananassa*), en la variedad San Andreas, facilitará el desarrollo de aplicaciones biotecnológicas avanzadas en el mejoramiento genético de este cultivo.
 
-# METODOLOGÍA
+# **METODOLOGÍA**
 
-## Población, muestra y muestreo
-
-### Ubicación de la investigación
+# **Ubicación de la investigación**
 
 La investigación se llevará a cabo en el Laboratorio de Biología Molecular de Plantas (LBMP), del Instituto de Investigación, Innovación y Desarrollo del Sector Agrario y Agroindustrial (IIDAA) de la Universidad Nacional Toribio Rodríguez de Mendoza de Amazonas. En este laboratorio se realizarán todos los procedimientos experimentales necesarios para el desarrollo del estudio, aprovechando su infraestructura y equipamiento avanzado, lo que garantiza la calidad y precisión en los resultados obtenidos. Este laboratorio desempeña un papel fundamental en la investigación científica, siendo un referente en la región para el estudio de la biotecnología vegetal y el mejoramiento de cultivos.
 
-**Figura 1.**  
+**Figura 1.**
 
 ```{r}
 #| echo: false
@@ -77,59 +130,63 @@ ggdraw() +
 
 ```
 
-### Población
+# **Población**
 
 La población estará conformada por plantas de fresa de la variedad San Andreas cultivadas en condiciones in vitro.
 
-### Muestra
+# **Muestra**
 
-**Multiplicación de Pecíolos:** Se utilizarán 120 pecíolos de fresa distribuidos en 12 tratamientos con 10 pecíolos por placa en cada tratamiento, con el fin de evaluar el número de brotes por planta.
+- Multiplicación: 120 pecíolos de fresa, distribuidos en 12 tratamientos (10 pecíolos por tratamiento), para evaluar el número de brotes por planta.
 
-**Aislamiento de Protoplastos:** Se emplearán 20 hojas de fresa, con tratamientos de celulosa y macerozima para determinar la cantidad de protoplastos viables por hoja.
+- Aislamiento de protoplastos: 20 hojas de fresa de la variedad San Andreas.
 
-**Regeneración de Plantas:** Se evaluará el porcentaje de plantas regeneradas a partir de protoplastos aislados de hojas de fresa, utilizando diferentes concentraciones de reguladores de crecimiento.
+- Regeneración de plantas: Evaluación del porcentaje de plantas regeneradas a partir de protoplastos aislados de hojas de fresa.
 
-### Muestreo
+# **Muestreo**
 
 El muestreo será probabilístico y completamente al azar. Los explantes de fresa serán seleccionados aleatoriamente de las plantas cultivadas in vitro.
 
-## Variables de Estudio
+# **VARIABLES DE ESTUDIO**
 
-### Variables independientes
--Etapa de Inducción de Brotes (Objetivo 1):
+# **Variables independientes**
 
-•	Concentración de Benzilaminopurina (BAP): Se evaluarán diferentes concentraciones de Benzilaminopurina (BAP) en combinación con 2,4-D (0,1 mg/L, 0,5 mg/L, 1 mg/L), incluyendo una concentración de 0 mg/L como control.
+- **Etapa de Inducción de Brotes (Objetivo 1)**:
 
-•	 Concentración de Ácido 2,4-diclorofenoxiacético (2,4-D): Se evaluarán diferentes concentraciones de 2,4-D combinadas con BAP para determinar las condiciones óptimas para la inducción de brotes. Las concentraciones de 2,4-D serán de 0,1 mg/L, 0,5 mg/L y 1,0 mg/L, combinadas con concentraciones de BAP que varían entre 0,1 mg/L y 1,0 mg/L, incluyendo una concentración de 0 mg/L en ambos reguladores como control.
+• Concentración de Benzilaminopurina (BAP): Se evaluarán diferentes concentraciones de Benzilaminopurina (BAP) que varían entre 0,1 mg/L y 1,0 mg/L, incluyendo una concentración de 0 mg/L en ambos reguladores como control.
 
--Etapa de Aislamiento de Protoplastos (Objetivo 2):
+• Concentración de Ácido 2,4-diclorofenoxiacético (2,4-D): Se evaluarán diferentes concentraciones de 2,4-D combinadas con BAP para determinar las condiciones óptimas para la inducción de brotes. Las concentraciones de 2,4-D serán de 0,1 mg/L, 0,5 mg/L y 1,0 mg/L.
 
-•	Concentración de Celulasa: Se utilizarán diferentes concentraciones de celulasa para la digestión enzimática de los tejidos, específicamente 0%, 0,5%, 1%, 1,5% y 2%, con el fin de determinar la concentración óptima para el aislamiento de protoplastos.
-•	Concentración de Macerozima: Se emplearán diferentes concentraciones de macerozima (0%, 0,05%, 0,1%) para la disolución de la pared celular.
+- **Etapa de Aislamiento de Protoplastos (Objetivo 2)**:
 
--Etapa de Regeneración de Protoplastos (Objetivo 3):
+• Concentración de Celulasa: Se utilizarán diferentes concentraciones de celulasa para la digestión enzimática de los tejidos, específicamente 0%, 0,5%, 1%, 1,5% y 2%, con el fin de determinar la concentración óptima para el aislamiento de protoplastos. • Concentración de Macerozima: Se emplearán diferentes concentraciones de macerozima (0%, 0,05%, 0,1%) para la disolución de la pared celular.
 
-•	Concentración de BAP: Se evaluarán diferentes concentraciones de BAP (0 mg/L, 3 mg/L, 5 mg/L, 7 mg/L) en combinación con Thidiazuron (TDZ) y Ácido naftalenoacético (NAA) para determinar las condiciones óptimas para la regeneración de plantas completas a partir de protoplastos.
-•	Concentración de TDZ y NAA: Se evaluarán diferentes concentraciones de TDZ (0 mg/L, 3 mg/L, 5 mg/L) y NAA (0,1 mg/L, 0,2 mg/L) para determinar las condiciones óptimas para la regeneración de plantas completas.
+- **Etapa de Regeneración de Protoplastos (Objetivo 3):**
 
+• Concentración de BAP: Se evaluarán diferentes concentraciones de BAP (0 mg/L, 3 mg/L, 5 mg/L, 7 mg/L) en combinación con Thidiazuron (TDZ) y Ácido naftalenoacético (NAA) para determinar las condiciones óptimas para la regeneración de plantas completas a partir de protoplastos. • Concentración de TDZ y NAA: Se evaluarán diferentes concentraciones de TDZ (0 mg/L, 3 mg/L, 5 mg/L) y NAA (0,1 mg/L, 0,2 mg/L) para determinar las condiciones óptimas para la regeneración de plantas completas.
 
-### Variables dependientes
+# **Variables dependientes**
 
--Número de Brotes por Planta: Se evaluará la cantidad de brotes generados a partir de pecíolos tratados con diferentes concentraciones de reguladores de crecimiento. Esta variable se utilizará para determinar la eficiencia de los tratamientos en la inducción de brotes y su capacidad para estimular el crecimiento in vitro.
+- **Número de Brotes por Planta:**
+Se evaluará la cantidad de brotes generados a partir de pecíolos tratados con diferentes concentraciones de reguladores de crecimiento. Esta variable se utilizará para determinar la eficiencia de los tratamientos en la inducción de brotes y su capacidad para estimular el crecimiento in vitro.
 
--Número de Protoplastos Aislados: Se cuantificará la cantidad de protoplastos viables obtenidos de las hojas de fresa mediante la aplicación de soluciones enzimáticas, que incluyen celulasa y macerozima. Esta variable es crucial para evaluar la eficacia del proceso de aislamiento de protoplastos y la viabilidad celular necesaria para las etapas subsecuentes de regeneración.
+- **Número de Protoplastos Aislados:**
+Se cuantificará la cantidad de protoplastos viables obtenidos de las hojas de fresa mediante la aplicación de soluciones enzimáticas, que incluyen celulasa y macerozima. Esta variable es crucial para evaluar la eficacia del proceso de aislamiento de protoplastos y la viabilidad celular necesaria para las etapas subsecuentes de regeneración.
 
--Regeneración de Plantas: La regeneración exitosa de plantas a partir de protoplastos se evaluará mediante las siguientes subvariables:
+- **Regeneración de Plantas:**
+La regeneración exitosa de plantas a partir de protoplastos se evaluará mediante las siguientes subvariables:
 
-•	Viabilidad de los Protoplastos: Se analizará la capacidad de los protoplastos para sobrevivir y dividirse después del proceso de aislamiento. La viabilidad es un factor determinante para asegurar que los protoplastos puedan progresar a las etapas de regeneración.
+• **Viabilidad de los Protoplastos:**
+Se analizará la capacidad de los protoplastos para sobrevivir y dividirse después del proceso de aislamiento. La viabilidad es un factor determinante para asegurar que los protoplastos puedan progresar a las etapas de regeneración.
 
-•	Formación de Microcolonias: Se evaluará la formación de microcolonias como indicador de la división celular exitosa, que constituye el primer paso hacia la regeneración de plantas completas. La formación de estas microcolonias es esencial para la posterior organogénesis.
+• **Formación de Microcolonias:**
+Se evaluará la formación de microcolonias como indicador de la división celular exitosa, que constituye el primer paso hacia la regeneración de plantas completas. La formación de estas microcolonias es esencial para la posterior organogénesis.
 
-•	Tasa de Regeneración: Se calculará el porcentaje de protoplastos que, tras su aislamiento y cultivo, logran regenerar plantas completas bajo las condiciones experimentales establecidas. Esta tasa será fundamental para determinar la eficiencia de los protocolos de regeneración y la capacidad de los protoplastos para dar lugar a plantas viables y completas.
+• **Tasa de Regeneración:**
+Se calculará el porcentaje de protoplastos que, tras su aislamiento y cultivo, logran regenerar plantas completas bajo las condiciones experimentales establecidas. Esta tasa será fundamental para determinar la eficiencia de los protocolos de regeneración y la capacidad de los protoplastos para dar lugar a plantas viables y completas.
 
-### Operacionalización de Variables
+# **Operacionalización de Variables**
 
-**Tabla 1.** 
+**Tabla 1.**
 
 ```{r}
 #| echo: false
@@ -158,24 +215,354 @@ tabla_variables %>%
 
 ```
 
-# Métodos
+# **MÉTODOS**
 
-## Material de estudio
+# **Material de estudio**
 
-El material de estudio consistirá en estolones y yemas axilares de la variedad de fresa San Andreas (Fragaria × ananassa), obtenidos del Instituto Nacional de Innovación Agraria (Estación Experimental Agraria Donoso). Inicialmente, se realizará un cultivo in vitro de estas plantas en medio MS estándar, el cual garantizará su desarrollo en condiciones controladas y libres de enfermedades. Una vez establecidas, se utilizarán los pecíolos para la multiplicación de brotes, empleando diferentes concentraciones de reguladores de crecimiento para inducir la formación de nuevos brotes. 
-Las hojas de las plantas cultivadas se utilizarán para el aislamiento de protoplastos, mediante la aplicación de soluciones enzimáticas como celulasa y macerozima, con el fin de obtener células viables para su regeneración. Finalmente, los protoplastos aislados se cultivarán en medios específicos para evaluar su capacidad de regenerar plantas completas en condiciones controladas, asegurando una producción libre de patógenos y apta para el mejoramiento genético.
+El material de estudio consistirá en estolones y yemas axilares de la variedad de fresa San Andreas (**Fragaria × ananassa**), obtenidos del Instituto Nacional de Innovación Agraria (Estación Experimental Agraria Donoso). Inicialmente, se realizará un cultivo in vitro de estas plantas en medio MS estándar, el cual garantizará su desarrollo en condiciones controladas y libres de enfermedades. Una vez establecidas, se utilizarán los pecíolos para la multiplicación de brotes, empleando diferentes concentraciones de reguladores de crecimiento para inducir la formación de nuevos brotes. Las hojas de las plantas cultivadas se utilizarán para el aislamiento de protoplastos, mediante la aplicación de soluciones enzimáticas como celulasa y macerozima, con el fin de obtener células viables para su regeneración. Finalmente, los protoplastos aislados se cultivarán en medios específicos para evaluar su capacidad de regenerar plantas completas en condiciones controladas, asegurando una producción libre de patógenos y apta para el mejoramiento genético.
 
-## Diseño de la investigación
+# **Diseño de la investigación**
 
--Etapa de multiplicación:
+- **Etapa de multiplicación:**
 
-En esta investigación se utilizará un diseño completamente al azar (DCA) con arreglo factorial, donde el factor A representa las concentraciones de BAP y el factor B las concentraciones de 2,4-D. Estará compuesto por 12 tratamientos y 6 repeticiones, donde cada unidad experimental consistirá en una placa de cultivo con 10 pecíolos por tratamiento.
+En esta investigación se utilizará un diseño completamente al azar (DCA), donde el factor A representa las concentraciones de BAP y el factor B las concentraciones de 2,4-D. Estará compuesto por 12 tratamientos y 6 repeticiones, donde cada unidad experimental consistirá en una placa de cultivo con 10 pecíolos por tratamiento (Tabla 2).
 
--Para la fase de aislamiento de protoplasto:
+**Tabla 2**
 
-Se utilizará un diseño experimental completamente al azar (DCA) con arreglo factorial, donde el Factor A representa las concentraciones de Celulasa y el Factor B las concentraciones de Macerozima. El experimento constará de 5 tratamientos y 3 repeticiones, donde cada unidad experimental consistirá en 20 hojas de fresa por tratamiento.
+Diseño de los tratamientos para multiplicación de plantas 
 
--Regeneración de protoplastos:
+```{r}
+#| echo: false
+#| results: 'asis'
+#| message: false
+#| warning: false
 
-Se utilizará un diseño experimental completamente al azar (DCA) con arreglo factorial, donde el Factor A representará las concentraciones de BAP (Benzilaminopurina), el Factor B las concentraciones de 2,4-D (Ácido 2,4-diclorofenoxiacético), y el Factor C las concentraciones de NAA (Ácido naftalenoacético). El experimento constará de 8 tratamientos y 6 repeticiones, donde cada unidad experimental consistirá en una placa de cultivo con 5 microcallos por tratamiento.
+# Instalar kableExtra si no está instalado
+if (!require(kableExtra)) {
+  install.packages("kableExtra")
+  library(kableExtra)
+}
+
+# Crear la tabla de tratamientos
+tabla_tratamientos <- data.frame(
+  Tratamiento = c("T0", "T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12"),
+  BAP_mg_L = c(0.0, 0.1, 0.5, 1.0, 0.1, 0.5, 1.0, 0.1, 0.5, 1.0, 0.1, 0.5, 1.0),
+  `2,4-D_mg_L` = c(0.0, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.5, 0.5, 0.5, 1.0, 1.0, 1.0)
+)
+
+# Mostrar la tabla con estilo
+tabla_tratamientos %>%
+  kable("html", caption = "Tratamientos con Diferentes Concentraciones de BAP y 2,4-D") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+
+
+```
+
+**Tabla: 3**
+
+Cualidades del experimento
+
+```{r}
+#| echo: false
+#| results: 'asis'
+#| message: false
+#| warning: false
+# Instalar kableExtra si no está instalado
+if (!require(kableExtra)) {
+  install.packages("kableExtra")
+  library(kableExtra)
+}
+
+# Crear la tabla de diseño experimental
+tabla_diseno <- data.frame(
+  Concepto = c("Tratamiento", "Repetición", "N° de unidades experimentales", "N° total de plantas evaluadas"),
+  Valor = c(12, 6, 72, 72)
+)
+
+# Mostrar la tabla con estilo
+tabla_diseno %>%
+  kable("html", caption = "Diseño Experimental Completo al Azar") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+```
+
+- **Para la fase de aislamiento de protoplasto:**
+
+Se utilizará un diseño experimental completamente al azar (DCA), donde el Factor A representa las concentraciones de Celulasa y el Factor B las concentraciones de Macerozima. El experimento constará de 5 tratamientos y 3 repeticiones, donde cada unidad experimental consistirá en 20 hojas de fresa por tratamiento (Tabla 4). 
+
+**Tabla 4**
+
+Diseño de tratamientos para aislamiento de protoplasto
+
+```{r}
+#| echo: false
+#| results: 'asis'
+#| message: false
+#| warning: false
+# Instalar kableExtra si no está instalado
+if (!require(kableExtra)) {
+  install.packages("kableExtra")
+  library(kableExtra)
+}
+
+# Crear la tabla de tratamientos
+tabla_tratamientos <- data.frame(
+  Tratamiento = c("T0", "T1", "T2", "T3", "T4"),
+  Celulosa = c(0.0, 0.5, 0.5, 1.0, 1.0),
+  Macerozima = c(0.0, 0.05, 0.1, 0.05, 0.1)
+)
+
+# Mostrar la tabla con estilo
+tabla_tratamientos %>%
+  kable("html", caption = "Tratamientos con Celulosa y Macerozima") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+```
+
+**Tabla 5**
+
+Características de la fase de aislamiento de protoplastos.
+
+```{r}
+#| echo: false
+#| results: 'asis'
+#| message: false
+#| warning: false
+# Instalar kableExtra si no está instalado
+if (!require(kableExtra)) {
+  install.packages("kableExtra")
+  library(kableExtra)
+}
+
+# Crear la tabla de diseño experimental
+tabla_diseno <- data.frame(
+  Concepto = c("Tratamiento", "Repetición", "N° de unidades experimentales", "N° total de plantas evaluadas"),
+  Valor = c("12", "3", "12", "12")
+)
+
+# Mostrar la tabla con estilo
+tabla_diseno %>%
+  kable("html", caption = "Diseño Completo al Azar") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+
+```
+
+- **Regeneración de protoplastos:**
+
+Se utilizará un diseño experimental completamente al azar (DCA), donde el Factor A representará las concentraciones de BAP (Benzilaminopurina), el Factor B las concentraciones de 2,4-D (Ácido 2,4-diclorofenoxiacético), y el Factor C las concentraciones de NAA (Ácido naftalenoacético). El experimento constará de 8 tratamientos y 6 repeticiones, donde cada unidad experimental consistirá en una placa de cultivo con 5 microcallos por tratamiento (Tabla 6).
+
+**Tabla 6**
+
+Diseño de tratamientos para Regeneración de plantas 
+
+```{r}
+#| echo: false
+#| results: 'asis'
+#| message: false
+#| warning: false
+# Instalar kableExtra si no está instalado
+if (!require(kableExtra)) {
+  install.packages("kableExtra")
+  library(kableExtra)
+}
+
+# Crear la tabla de tratamientos
+tabla_tratamientos <- data.frame(
+  Tratamiento = c("T0", "T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8"),
+  BAP_mg_L = c(0.0, 3.0, 5.0, 3.0, 5.0, 0.0, 0.0, 0.0, 0.0),
+  TDZ_mg_L = c(0.0, 0.0, 0.0, 0.0, 0.0, 3.0, 5.0, 3.0, 5.0),
+  NAA_mg_L = c(0.0, 0.1, 0.1, 0.2, 0.2, 0.1, 0.1, 0.2, 0.2)
+)
+
+# Mostrar la tabla con estilo
+tabla_tratamientos %>%
+  kable("html", caption = "Tratamientos con BAP, TDZ y NAA") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+
+```
+
+**Tabla 7**
+
+Características de la fase de regeneración de platas.
+
+```{r}
+#| echo: false
+#| results: 'asis'
+#| message: false
+#| warning: false
+# Instalar kableExtra si no está instalado
+if (!require(kableExtra)) {
+  install.packages("kableExtra")
+  library(kableExtra)
+}
+
+# Crear la tabla de diseño experimental
+tabla_diseno <- data.frame(
+  Concepto = c("Tratamiento", "Repetición", "N° de unidades experimentales", "N° total de plantas evaluadas"),
+  Valor = c(8, 6, 48, 48)
+)
+
+# Mostrar la tabla con estilo
+tabla_diseno %>%
+  kable("html", caption = "Diseño Completo al Azar") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+```
+
+# **MÉTODOS, TÉCNICAS Y PROCEDIMIENTOS**
+
+- **Obtención de explantes de fresa**
+El material de estudio consistirá en estolones y yemas axilares de fresa, variedad San Andreas (Fragaria × ananassa), obtenidos del Instituto Nacional de Innovación Agraria (Estación Experimental Agraria Donoso), reconocida por su alta producción de fresa. Las plantas seleccionadas serán elegidas por su excelente estado de salud y sus características físicas, asegurando la calidad y viabilidad de los explantes para las etapas experimentales posteriores.
+
+- **Acondicionamiento y multiplicación de explantes**
+Los pecíolos seleccionados se cortarán y se colocarán en medios de cultivo MS suplementados con sacarosa al 30 g/L y agar al 8 g/L, ajustando el pH a 5,7 para favorecer el acondicionamiento. Los explantes se incubarán bajo condiciones controladas de temperatura entre 25° ± 1° C, con un fotoperíodo de 16 horas de luz y 8 horas de oscuridad. Estas condiciones promoverán la formación de brotes en los pecíolos, iniciando el proceso de multiplicación.
+
+- **Aislamiento de protoplastos**
+Una vez que los brotes hayan alcanzado el tamaño adecuado, se procederá con el aislamiento de protoplastos mediante digestión enzimática. Se emplearán soluciones enzimáticas compuestas por celulasa y macerozima para disolver la pared celular de los pecíolos. La digestión se llevará a cabo en condiciones controladas de agitación a 25°± 1° C para garantizar una adecuada disolución de la pared celular y la obtención de protoplastos viables.
+
+- **Evaluación del número de protoplastos**
+Tras el aislamiento, los protoplastos se centrifugarán y se evaluará su viabilidad utilizando tinciones específicas, como yodo o eosina, para determinar el número de protoplastos viables obtenidos. Este paso es crucial para asegurar que los protoplastos sean funcionales y aptos para las siguientes fases del proceso de regeneración.
+
+- **Fase de microcallos**
+Antes de iniciar la regeneración de plantas completas, los protoplastos serán cultivados en medios específicos para inducir la formación de microcallos. Se utilizará un medio enriquecido con reguladores de crecimiento como BAP, TDZ y NAA, que favorecen la formación de pequeños callos. Estos microcallos servirán como base para la regeneración celular, siendo un paso intermedio fundamental para asegurar el desarrollo posterior de plantas completas.
+
+- **Regeneración de plantas in vitro**
+Los microcallos obtenidos serán transferidos a un medio de cultivo sólido enriquecido con BAP, TDZ y NAA para inducir la regeneración de plantas completas. Los microcallos serán monitoreados y transferidos periódicamente a nuevos medios hasta que se logre la formación de brotes y raíces. Todo el proceso se llevará a cabo bajo condiciones controladas, siguiendo protocolos establecidos para garantizar la obtención de protoplastos viables y la regeneración eficiente de plantas completas a partir de los protoplastos aislados. Este enfoque metodológico busca asegurar una alta tasa de regeneración y contribuir al desarrollo de un protocolo efectivo para la fresa variedad San Andreas, que pueda aplicarse en futuras investigaciones de mejoramiento genético y biotecnología vegetal.
+
+# **EVALUACIÓN DE VARIABLES**
+
+- **Etapa de multiplicación**
+
+Porcentaje de regeneración: Se calculará el porcentaje de regeneración, que se obtendrá dividiendo el número de pecíolos que generaron brotes entre el total de pecíolos cultivados, para evaluar la efectividad de las concentraciones de reguladores de crecimiento en la inducción de brotes.
+Número de brotes: Se realizará un conteo visual de los brotes generados en cada tratamiento. Este conteo se llevará a cabo observando los brotes desarrollados a partir de los pecíolos cultivados, con el fin de evaluar la efectividad de las concentraciones de reguladores de crecimiento en la inducción de brotes.
+
+- **Etapa de aislamiento de protoplastos**
+
+Número de protoplastos aislados: Se cuantificará el número total de protoplastos obtenidos a partir de las hojas de fresa después del proceso de digestión enzimática y purificación. Este procedimiento permitirá determinar la cantidad de protoplastos viables obtenidos de los pecíolos tratados.
+Viabilidad de los protoplastos: La viabilidad de los protoplastos se evaluará mediante tinciones específicas, tales como yodo o eosina, y se observará mediante microscopía. El porcentaje de protoplastos viables será calculado con base en la cantidad de protoplastos que retengan coloración específica, lo que indicará que se encuentran en condiciones óptimas para la regeneración.
+
+- **Etapa de Regeneración de Protoplastos**
+
+· Porcentaje de regeneración (R%)
+Se calculará el porcentaje de protoplastos regenerados que logran desarrollarse completamente, en relación con el total de protoplastos tratados. Este porcentaje se determinará mediante la observación visual del desarrollo de brotes y raíces, evaluando la capacidad de los protoplastos para formar plantas completas bajo las condiciones in vitro establecidas.
+
+· Porcentaje de enraizamiento (E%):
+Se calculará el porcentaje de protoplastos regenerados que logran enraizarse, en relación con el total de protoplastos regenerados. Este porcentaje se determinará mediante la observación visual de las raíces formadas, evaluando la capacidad de los protoplastos para desarrollar raíces y formar plantas completas.
+
+·Número de brotes (B):
+Se realizará un conteo visual de los brotes generados en cada tratamiento, observando los brotes desarrollados a partir de los pecíolos cultivados, con el fin de evaluar la efectividad de las concentraciones de reguladores de crecimiento en la inducción de brotes.
+
+# **CRONOGRAMA**
+
+**Tabla:8**
+
+Cronograma de ejecución
+
+```{r}
+#| echo: false
+#| results: 'asis'
+#| message: false
+#| warning: false
+
+# Instalar kableExtra si no está instalado
+if (!require(kableExtra)) {
+  install.packages("kableExtra")
+  library(kableExtra)
+}
+
+# Crear el cronograma de ejecución
+cronograma <- data.frame(
+  Actividades = c(
+    "Establecimiento inicial in vitro y mantenimiento de plantas de fresa",
+    "Multiplicación in vitro en diferentes concentraciones de reguladores de crecimiento",
+    "Aislamiento de protoplastos de fresa con evaluación de viabilidad",
+    "Cultivo de protoplastos para inducción de microcallos",
+    "Transferencia de microcallos a medio sólido para regeneración",
+    "Monitoreo de la regeneración de brotes y raíces",
+    "Desarrollo de informe final y conclusiones"
+  ),
+  `15 Jul` = c("X", "", "", "", "", "", ""),
+  `15 Ago` = c("", "X", "", "", "", "", ""),
+  `15 Sep` = c("", "", "X", "", "", "", ""),
+  `15 Oct` = c("", "", "", "X", "", "", ""),
+  `15 Nov` = c("", "", "", "", "X", "", ""),
+  `15 Dic` = c("", "", "", "", "", "X", ""),
+  `15 Ene` = c("", "", "", "", "", "", "X"),
+  `15 Feb` = c("", "", "", "", "", "", ""),
+  `15 Mar` = c("", "", "", "", "", "", "X"),
+  `15 Abr` = c("", "", "", "", "", "", "X")
+)
+
+# Crear y mostrar la tabla
+cronograma %>%
+  kable("html", caption = "Cronograma de ejecución") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+```
+
+
+# **ANÁLISIS DE DATOS**
+ Los datos obtenidos en el estudio serán procesados utilizando el software estadístico R y Excel. En primer lugar, los datos serán ingresados y organizados en hojas de cálculo en Excel, lo que facilitará la manipulación y visualización inicial de los resultados. Posteriormente, el análisis estadístico se realizará en R, donde las variables de estudio registradas serán sometidas a un análisis de varianza (ANOVA) con un nivel de significancia de P > 0.05. 
+Si se detectan diferencias significativas entre los tratamientos, se realizará una comparación de medias utilizando la prueba de Tukey (P > 0.05) para identificar las diferencias entre los tratamientos. Este enfoque combinado de Excel para la organización de datos y R para el análisis estadístico garantizará un análisis completo, preciso y detallado de los resultados, facilitando la obtención de conclusiones confiables.
+
+# **REFERENCIAS BIBLIOGRÁFICAS**
+
+Asai, T., Tena, G., Plotnikova, J., Willmann, M. R., Chiu, W.-L., Gomez-Gomez, L., Boller, T., Ausubel, F. M., & Sheen, J. (2002). MAP kinase signalling cascade in *Arabidopsis* innate immunity. *Nature, 415*(6875), 977-983. https://doi.org/10.1038/415977a
+
+Bertini, E., Tornielli, G. B., Pezzotti, M., & Zenoni, S. (2019). Regeneration of plants from embryogenic callus-derived protoplasts of Garganega and Sangiovese grapevine (*Vitis vinifera* L.) cultivars. *Plant Cell, Tissue and Organ Culture (PCTOC), 138*(2), 239-246. https://doi.org/10.1007/s11240-019-01619-1
+
+Biswas, A., Gagnon, J. N., Brouns, S. J. J., Fineran, P. C., & Brown, C. M. (2013). CRISPRTarget: Bioinformatic prediction and analysis of crRNA targets. *RNA Biology, 10*(5), 817-827. https://doi.org/10.4161/rna.24046
+
+Castro, L. M. D., Mourão Filho, F. D. A. A., & Mendes, B. M. J. (2011). Eficiência de isolamento e de plaqueamento de protoplastos de laranja-doce. *Revista Brasileira de Fruticultura, 33*(2), 509-516. https://doi.org/10.1590/S0100-29452011005000074
+
+Cho, S. W., Kim, S., Kim, Y., Kweon, J., Kim, H. S., Bae, S., & Kim, J.-S. (2014). Analysis of off-target effects of CRISPR/Cas-derived RNA-guided endonucleases and nickases. *Genome Research, 24*(1), 132-141. https://doi.org/10.1101/gr.162339.113
+
+Chulanov, V., Kostyusheva, A., Brezgin, S., Ponomareva, N., Gegechkori, V., Volchkova, E., Pimenov, N., & Kostyushev, D. (2021). CRISPR Screening: Molecular Tools for Studying Virus–Host Interactions. *Viruses, 13*(11), Article 11. https://doi.org/10.3390/v13112258
+
+Dean, R., Van Kan, J. a. L., Pretorius, Z. A., Hammond-Kosack, K. E., Di Pietro, A., Spanu, P. D., Rudd, J. J., Dickman, M., Kahmann, R., Ellis, J., & Foster, G. D. (2012). The Top 10 fungal pathogens in molecular plant pathology. *Molecular Plant Pathology, 13*(4), 414-430. https://doi.org/10.1111/j.1364-3703.2011.00783.x
+
+Fitzgerald, J., Xu, X., Pepper, N., Easterbrook, M., & Solomon, M. (2008). The spatial and temporal distribution of predatory and phytophagous mites in field-grown strawberry in the UK. *Experimental and Applied Acarology, 44*(4), 293-306. https://doi.org/10.1007/s10493-008-9151-0
+
+Fusi, N., Smith, I., Doench, J., & Listgarten, J. (2015). In Silico Predictive Modeling of CRISPR/Cas9 guide efficiency (p. 021568). *bioRxiv*. https://doi.org/10.1101/021568
+
+Gaston, A., Osorio, S., Denoyes, B., & Rothan, C. (2020). Applying the Solanaceae Strategies to Strawberry Crop Improvement. *Trends in Plant Science, 25*(2), 130-140. https://doi.org/10.1016/j.tplants.2019.10.003
+
+Ghosh, D., Venkataramani, P., Nandi, S., & Bhattacharjee, S. (2019). CRISPR–Cas9 a boon or bane: The bumpy road ahead to cancer therapeutics. *Cancer Cell International, 19*(1), 12. https://doi.org/10.1186/s12935-019-0726-0
+
+Gonzales-Arteaga, J. J., Romero-Rivas, L. C., Rodríguez-Layza, J., & Párraga-Quintanilla, A. (2022). Establecimiento in vitro de *Fragaria x ananassa* var. Aroma a partir de yemas de corona. *Manglar, 19*(4), Article 4. https://doi.org/10.57188/manglar.2022.038
+
+Gou, Y.-J., Li, Y.-L., Bi, P.-P., Wang, D.-J., Ma, Y.-Y., Hu, Y., Zhou, H.-C., Wen, Y.-Q., & Feng, J.-Y. (2020). Optimization of the protoplast transient expression system for gene functional studies in strawberry (*Fragaria vesca*). *Plant Cell, Tissue and Organ Culture (PCTOC), 141*(1), 41-53. https://doi.org/10.1007/s11240-020-01765-x
+
+Hernández-Ruiz, J., Rangel-Castillo, A. E., Laguna-Estrada, M. I., Alejandro-Rojas, G. J., Mireles-Arriaga, A. I., & Ruiz-Nieto, J. E. (2025). Plantas de fresa regeneradas in vitro mediante organogénesis directa en diferentes concentraciones de auxinas y citocininas. *Bioagro, 37*(1), 123-134. https://doi.org/10.51372/bioagro371.11
+
+Iqbal, M., Jamshaid, M., Zahid, M. A., Andreasson, E., Vetukuri, R. R., & Stenberg, J. A. (2021). Biological control of strawberry crown rot, root rot and grey mould by the beneficial fungus *Aureobasidium pullulans*. *BioControl, 66*(4), 535-545. https://doi.org/10.1007/s10526-021-10083-w
+
+James, D. J., Passey, A. J., & Barbara, D. J. (1990). Agrobacterium-mediated transformation of the cultivated strawberry (*Fragaria × anannassa duch.*) using disarmed binary vectors. *Plant Science, 69*(1), 79-94. https://doi.org/10.1016/0168-9452(90)90106-X
+
+Kloth, K. J., Wiegers, G. L., Busscher-Lange, J., van Haarst, J. C., Kruijer, W., Bouwmeester, H. J., Dicke, M., & Jongsma, M. A. (2016). AtWRKY22 promotes susceptibility to aphids and modulates salicylic acid and jasmonic acid signalling. *Journal of Experimental Botany, 67*(11), 3383-3396. https://doi.org/10.1093/jxb/erw159
+
+Koloniuk, I., Matyášová, A., Brázdová, S., Veselá, J., Přibylová, J., Fránová, J., & Elena, S. F. (2022). Transmission of Diverse Variants of Strawberry Viruses Is Governed by a Vector Species. *Viruses, 14*(7), Article 7. https://doi.org/10.3390/v14071362
+
+Mixquititla-Casbis, G., Villegas-Torres, O. G., Andrade-Rodríguez, M., Sotelo-Nava, H., Cardoso-Taketa, A. T., Mixquititla-Casbis, G., Villegas-Torres, O. G., Andrade-Rodríguez, M., Sotelo-Nava, H., & Cardoso-Taketa, A. T. (2020). Crecimiento, rendimiento y calidad de fresa por efecto del régimen nutrimental. *Revista mexicana de ciencias agrícolas, 11*(6), 1337-1348. https://doi.org/10.29312/remexca.v11i6.2329
+
+Nyman, M., & Wallin, A. (1992a). Improved culture technique for strawberry (*Fragaria x ananassa* Duch.) protoplasts and the determination of DNA content in protoplast derived plants. *Plant Cell, Tissue and Organ Culture, 30*(2), 127-133. https://doi.org/10.1007/BF00034306
+
+Nyman, M., & Wallin, A. (1992b). Transient gene expression in strawberry (*Fragaria x ananassa* Duch.) protoplasts and the recovery of transgenic plants. *Plant Cell Reports, 11*(2). https://doi.org/10.1007/BF00235264
+
+Potrykus, I., & Shillito, R. D. (1986). Protoplasts: Isolation, culture, plant regeneration. En *Methods in Enzymology* (Vol. 118, pp. 549-578). Elsevier. https://doi.org/10.1016/0076-6879(86)18101-8
+
+Quispe, J. E. J., Huamani, J. M., Quincho, B. G., Gomez, R. L., & Sacha, J. C. C. (2025). Evaluación Agronómica de la Producción Hidropónica de Tres Variedades de Fresa (*Fragaria ananassa Duch.*) en Condiciones Controladas. *Revista Veritas de Difusão Científica, 6*(1), Article 1. https://doi.org/10.61616/rvdc.v6i1.601
+
+Rivas, L. C. R., Gonzales-Arteaga, J. J., Rodríguez-Layza, J., Párraga-Quintanilla, A., & Olivera-Soto, J. A. (2023). Multiplicación y enraizamiento in vitro de *Fragaria x ananassa* Duch. Var. ‘Aromas’. *Revista de Investigaciones Altoandinas - Journal of High Andean Research, 25*(4), Article 4. https://doi.org/10.18271/ria.2023.563
+
+Roest, S., & Gilissen, L. J. W. (1993). Regeneration from protoplasts-a supplementary literature review. *Acta Botanica Neerlandica, 42*(1), 1-23. https://doi.org/10.1111/j.1438-8677.1993.tb00674.x
+
+Romero-Rivas, L. C., Gonzales-Arteaga, J. J., Rodríguez-Layza, J., Párraga-Quintanilla, A., Olivera-Soto, J. A., Romero-Rivas, L. C., Gonzales-Arteaga, J. J., Rodríguez-Layza, J., Párraga-Quintanilla, A., & Olivera-Soto, J. A. (2023). Multiplicación y enraizamiento in vitro de *Fragaria x ananassa* Duch. Var. ‘Aromas’. *Revista de Investigaciones Altoandinas, 25*(4), 205-212. https://doi.org/10.18271/ria.2023.563
+
+Ülker, B., & Somssich, I. E. (2004). WRKY transcription factors: From DNA binding towards biological function. *Current Opinion in Plant Biology, 7*(5), 491-498. https://doi.org/10.1016/j.pbi.2004.07.012
+
+Vieira, M. L. C., Jones, B., Cocking, E. C., & Davey, M. R. (1990). Plant regeneration from protoplasts isolated from seedling cotyledons of *Stylosanthes guianensis, S. macrocephala and S. scabra*. *Plant Cell Reports, 9*(5). https://doi.org/10.1007/BF00232304
 
